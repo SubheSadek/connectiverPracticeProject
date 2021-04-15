@@ -1,0 +1,16 @@
+<template>
+<div>
+  <br><br><br><br><br>
+  <div class="row justify-content-center mb-5" v-for="item in postData" :key="item">
+    <div class="card col-6">
+      <h5 class="card-header">{{item.pname}}</h5>
+      <div class="card-body">
+        <h5 class="card-title">{{item.title}}</h5>
+        <p class="card-text">{{item.description}}.</p><br>
+        <img src="/img/animation.jpg" width="auto" height="350" alt="">
+      </div>
+      <comment/>
+    </div>
+  </div>
+</div>
+</template>
